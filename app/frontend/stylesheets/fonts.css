@@ -1,0 +1,9 @@
+body {
+  font-family: 'Inter', var(--font-sans);
+}
+
+@supports (font-variation-settings: normal) {
+  body {
+    font-family: 'Inter var', var(--font-sans);
+  }
+}

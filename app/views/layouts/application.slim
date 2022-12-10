@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title Artem Zelenov
+    meta name='viewport' content='width=device-width,initial-scale=1'
+    = csrf_meta_tags
+    = csp_meta_tag
+    link rel='preconnect' href='https://rsms.me/'
+    = stylesheet_link_tag 'https://rsms.me/inter/inter.css'
+    = vite_client_tag
+    = vite_typescript_tag 'application'
+    = vite_typescript_tag 'redux'
+  body
+    = yield

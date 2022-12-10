@@ -1,0 +1,100 @@
+.passion {
+  position: relative;
+  background-attachment: fixed;
+}
+
+.passion.__front {
+  background-image: radial-gradient(
+    75% 95% at 50% 4%,
+    rgba(126, 80, 175, 0.5) 0%,
+    rgba(126, 80, 175, 0) 100%
+  );
+}
+
+.passion.__sculpt {
+  background-image: radial-gradient(
+    75% 95% at 50% 4%,
+    rgba(238, 65, 124, 0.5) 0%,
+    rgba(126, 80, 175, 0) 100%
+  );
+}
+
+.passion.__music {
+  background-image: radial-gradient(
+    75% 95% at 50% 4%,
+    rgba(77, 187, 95, 0.5) 0%,
+    rgba(126, 80, 175, 0) 100%
+  );
+}
+
+.passion_layout {
+  position: relative;
+  min-block-size: 100vh;
+  padding-block: max(60px, 10vh);
+  padding-inline: 30px;
+  overflow: hidden;
+}
+
+.passion.__in-progress .passion_layout::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: calc(100vw * 1.5);
+  height: 50px;
+  background: repeating-linear-gradient(
+    -45deg,
+    hsl(56.9, 100%, 50.59%),
+    hsl(56.9, 100%, 50.59%) 50px,
+    black 50px,
+    black 100px
+  );
+  transform: translate(-50%, -50%) rotate(31deg);
+}
+
+.passion.__in-progress .passion_layout::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: calc(100vh * 1.5);
+  height: 50px;
+  background: repeating-linear-gradient(
+    -45deg,
+    hsl(56.9, 100%, 50.59%),
+    hsl(56.9, 100%, 50.59%) 50px,
+    black 50px,
+    black 100px
+  );
+  transform: translate(-50%, -50%) rotate(-65deg);
+}
+
+.passion_grid {
+  display: grid;
+  grid-template-areas:
+    'logo passion-name'
+    'skills articles';
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.passion_logo {
+  position: fixed;
+  z-index: var(--layer-1);
+  grid-area: logo;
+}
+
+.passion_title {
+  grid-area: passion-name;
+}
+
+.passion_actions {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding-block: 30px;
+  padding-inline: 30px;
+}

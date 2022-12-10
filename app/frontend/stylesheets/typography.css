@@ -1,0 +1,11 @@
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: var(--font-weight-5);
+  color: white;
+}
+
+h1,
+.heading-1 {
+  font-size: 43px;
+  line-height: 49px;
+}
