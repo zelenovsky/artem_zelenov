@@ -35,42 +35,6 @@
   overflow: hidden;
 }
 
-.passion.__in-progress .passion_layout::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: block;
-  width: calc(100vw * 1.5);
-  height: 50px;
-  background: repeating-linear-gradient(
-    -45deg,
-    hsl(56.9, 100%, 50.59%),
-    hsl(56.9, 100%, 50.59%) 50px,
-    black 50px,
-    black 100px
-  );
-  transform: translate(-50%, -50%) rotate(31deg);
-}
-
-.passion.__in-progress .passion_layout::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: block;
-  width: calc(100vh * 1.5);
-  height: 50px;
-  background: repeating-linear-gradient(
-    -45deg,
-    hsl(56.9, 100%, 50.59%),
-    hsl(56.9, 100%, 50.59%) 50px,
-    black 50px,
-    black 100px
-  );
-  transform: translate(-50%, -50%) rotate(-65deg);
-}
-
 .passion_grid {
   display: grid;
   grid-template-areas:
